@@ -897,7 +897,7 @@ data SomeDense = SomeDense
     -- with pre-0.6 versions of this library, when 'String' was the prefered
     -- string type, and not 'T.Text'.
   , _someDenseAmount            :: !Rational
-  } deriving (Eq, Show, GHC.Generic)
+  } deriving (Eq, Read, Show, GHC.Generic)
 
 -- | __WARNING__ This instance does not compare monetary amounts across
 -- different currencies, it just helps you sort 'SomeDense' values in case you
